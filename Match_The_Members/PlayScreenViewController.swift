@@ -51,15 +51,24 @@ class PlayScreenViewController: UIViewController {
         button2.layer.borderColor = UIColor.black.cgColor
         button3.layer.borderColor = UIColor.black.cgColor
         button4.layer.borderColor = UIColor.black.cgColor
+        
+        button1.layer.cornerRadius = 5
+        button2.layer.cornerRadius = 5
+        button3.layer.cornerRadius = 5
+        button4.layer.cornerRadius = 5
+        
         statsBtn.layer.borderWidth = 2
+        statsBtn.layer.cornerRadius = 5
         statsBtn.layer.borderColor = UIColor.black.cgColor
         
-        button1.backgroundColor = UIColor(red:0.72, green:0.95, blue:0.95, alpha:1.0)
-        button2.backgroundColor = UIColor(red:0.72, green:0.95, blue:0.95, alpha:1.0)
-        button3.backgroundColor = UIColor(red:0.72, green:0.95, blue:0.95, alpha:1.0)
-        button4.backgroundColor = UIColor(red:0.72, green:0.95, blue:0.95, alpha:1.0)
-        statsBtn.backgroundColor = UIColor(red:0.72, green:0.95, blue:0.95, alpha:1.0)
+        revertColors()
         
+        statsBtn.backgroundColor = UIColor(red:0.467, green:0.933, blue:0.988, alpha:1.0)
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("Hello")
     }
     
     @IBAction func buttonOne(_ sender: Any) {
@@ -158,6 +167,7 @@ class PlayScreenViewController: UIViewController {
         button2.isEnabled = false
         button3.isEnabled = false
         button4.isEnabled = false
+        statsBtn.isEnabled = false
     }
     
     func validateButtons() {
@@ -165,13 +175,14 @@ class PlayScreenViewController: UIViewController {
         button2.isEnabled = true
         button3.isEnabled = true
         button4.isEnabled = true
+        statsBtn.isEnabled = true
     }
     
     func revertColors() {
-        button1.backgroundColor = UIColor(red:0.72, green:0.95, blue:0.95, alpha:1.0)
-        button2.backgroundColor = UIColor(red:0.72, green:0.95, blue:0.95, alpha:1.0)
-        button3.backgroundColor = UIColor(red:0.72, green:0.95, blue:0.95, alpha:1.0)
-        button4.backgroundColor = UIColor(red:0.72, green:0.95, blue:0.95, alpha:1.0)
+        button1.backgroundColor = UIColor(red:0.467, green:0.933, blue:0.988, alpha:1.0)
+        button2.backgroundColor = UIColor(red:0.467, green:0.933, blue:0.988, alpha:1.0)
+        button3.backgroundColor = UIColor(red:0.467, green:0.933, blue:0.988, alpha:1.0)
+        button4.backgroundColor = UIColor(red:0.467, green:0.933, blue:0.988, alpha:1.0)
     }
     
     func getRightColor() {

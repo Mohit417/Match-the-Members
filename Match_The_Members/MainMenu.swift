@@ -15,9 +15,10 @@ class MainMenu: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        startBtn.backgroundColor = UIColor(red:0.72, green:0.95, blue:0.95, alpha:1.0)
+        startBtn.backgroundColor = UIColor(red:0.467, green:0.933, blue:0.988, alpha:1.0)
         startBtn.layer.borderColor = UIColor.black.cgColor
         startBtn.layer.borderWidth = 2
+        startBtn.layer.cornerRadius = 10
     }
 
 
