@@ -12,7 +12,7 @@ Match the Members is an iOS application created for the Mobile Developers of Ber
 <h3>Running out of time when playing:</h3>
 <img src="img2.png" width="40%">
 <br><br>
-<h3>Game Screen when you select member correctly:</h3>
+<h3>Game Screen when you select member incorrectly:</h3>
 <img src="img4.png" width="40%">
 <br><br>
 <h3>Statistics Screen that tracks previous progress:</h3>
