@@ -42,28 +42,25 @@ class PlayScreenViewController: UIViewController {
         
         loadImageAndNameAndNumAndStuff()
         
-        button1.layer.borderWidth = 2
-        button2.layer.borderWidth = 2
-        button3.layer.borderWidth = 2
-        button4.layer.borderWidth = 2
-        
-        button1.layer.borderColor = UIColor.black.cgColor
-        button2.layer.borderColor = UIColor.black.cgColor
-        button3.layer.borderColor = UIColor.black.cgColor
-        button4.layer.borderColor = UIColor.black.cgColor
+//        button1.layer.borderWidth = 2
+//        button2.layer.borderWidth = 2
+//        button3.layer.borderWidth = 2
+//        button4.layer.borderWidth = 2
+//
+//        button1.layer.borderColor = UIColor.black.cgColor
+//        button2.layer.borderColor = UIColor.black.cgColor
+//        button3.layer.borderColor = UIColor.black.cgColor
+//        button4.layer.borderColor = UIColor.black.cgColor
         
         button1.layer.cornerRadius = 5
         button2.layer.cornerRadius = 5
         button3.layer.cornerRadius = 5
         button4.layer.cornerRadius = 5
         
-        statsBtn.layer.borderWidth = 2
-        statsBtn.layer.cornerRadius = 5
-        statsBtn.layer.borderColor = UIColor.black.cgColor
+//        MemberImage.layer.borderWidth = 3
+//        MemberImage.layer.borderColor = UIColor.black.cgColor
         
         revertColors()
-        
-        statsBtn.backgroundColor = UIColor(red:0.467, green:0.933, blue:0.988, alpha:1.0)
         
     }
     
@@ -147,12 +144,12 @@ class PlayScreenViewController: UIViewController {
     
     func pauseGame() {
         if pause {
-            pauseButton.setTitle("Resume", for: .normal)
+            pauseButton.setImage(UIImage(named: "play.png"), for: .normal)
             gameTimer.invalidate()
             invalidateButtons()
         } else {
             validateButtons()
-            pauseButton.setTitle("Pause", for: .normal)
+            pauseButton.setImage(UIImage(named: "pause.png"), for: .normal)
             if !statisticsPage {
                 score = 0
             }
@@ -179,10 +176,10 @@ class PlayScreenViewController: UIViewController {
     }
     
     func revertColors() {
-        button1.backgroundColor = UIColor(red:0.467, green:0.933, blue:0.988, alpha:1.0)
-        button2.backgroundColor = UIColor(red:0.467, green:0.933, blue:0.988, alpha:1.0)
-        button3.backgroundColor = UIColor(red:0.467, green:0.933, blue:0.988, alpha:1.0)
-        button4.backgroundColor = UIColor(red:0.467, green:0.933, blue:0.988, alpha:1.0)
+        button1.backgroundColor = UIColor(red:1, green:232/255, blue:105/255, alpha:1.0)
+        button2.backgroundColor = UIColor(red:1, green:232/255, blue:105/255, alpha:1.0)
+        button3.backgroundColor = UIColor(red:1, green:232/255, blue:105/255, alpha:1.0)
+        button4.backgroundColor = UIColor(red:1, green:232/255, blue:105/255, alpha:1.0)
     }
     
     func getRightColor() {
