@@ -5,15 +5,11 @@ Match the Members is an iOS application created for the Mobile Developers of Ber
 
 <h3>Main Menu Screen:</h3>
 <img src="img1.jpg" width="40%">
-<br><br>
 <h3>Game Selection Screen:</h3>
 <img src="img2.jpg" width="40%">
-<br><br>
 <h3>Game Screen when you select member correctly:</h3>
 <img src="img3.jpg" width="40%">
-<br><br>
 <h3>Game Screen when you select member incorrectly:</h3>
 <img src="img4.jpg" width="40%">
-<br><br>
 <h3>Statistics Screen that tracks previous progress:</h3>
 <img src="img5.jpg" width="40%">
